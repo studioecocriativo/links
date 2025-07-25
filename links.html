@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>STUDIO ECOCRIATIVO | Links Oficiais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root {
+      --roxo: #6c4ab6;
+      --lilas: #c7b8ea;
+      --preto: #0d0d0d;
+      --branco: #ffffff;
+      --glass: rgba(255, 255, 255, 0.05);
+      --blur: blur(14px);
+      --grad: linear-gradient(135deg, #6c4ab6, #c7b8ea);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      background-size: 400% 400%;
+      animation: gradientMove 25s ease infinite;
+      color: var(--branco);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+    }
+
+    @keyframes gradientMove {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .container {
+      max-width: 460px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--lilas);
+      box-shadow: 0 0 24px rgba(108, 74, 182, 0.5);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: var(--branco);
+      text-transform: uppercase;
+    }
+
+    h1 span {
+      color: var(--roxo);
+    }
+
+    p.subtitle {
+      font-size: 1rem;
+      color: var(--lilas);
+      margin-bottom: 2rem;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: var(--glass);
+      backdrop-filter: var(--blur);
+      padding: 1rem;
+      border-radius: 14px;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: var(--branco);
+      font-weight: 600;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(108, 74, 182, 0.15);
+    }
+
+    .link-btn:hover {
+      background: var(--grad);
+      color: var(--preto);
+      border-color: var(--branco);
+      transform: scale(1.02);
+      box-shadow: 0 0 24px rgba(199, 184, 234, 0.4);
+    }
+
+    .link-btn svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      .link-btn {
+        font-size: 0.95rem;
+        padding: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.postimg.cc/PqZRRBBD/logo-2.png" alt="Studio EcoCriativo" class="logo" />
+    <h1>STUDIO <span>ECOCRIATIVO</span></h1>
+    <p class="subtitle">Links Oficiais • Design com Propósito</p>
+
+    <a href="https://wa.me/5512996500827?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento!" class="link-btn" target="_blank">
+      <i data-lucide="message-circle"></i> WhatsApp - Orçamento
+    </a>
+
+    <a href="https://www.instagram.com/studioecocriativo" class="link-btn" target="_blank">
+      <i data-lucide="instagram"></i> Portfólio no Instagram
+    </a>
+
+    <a href="#" class="link-btn" target="_blank">
+      <i data-lucide="palette"></i> Projetos no Behance
+    </a>
+
+    <a href="mailto:contato@ecocriativo.com" class="link-btn" target="_blank">
+      <i data-lucide="mail"></i> Enviar E-mail
+    </a>
+
+    <a href="https://drive.google.com/file/d/1Y7FCE5ZuRSnfPckvYOFIc2-K6-tAdaMy/view?usp=sharing" class="link-btn" target="_blank">
+      <i data-lucide="file-text"></i> Baixar Catálogo de Serviços
+    </a>
+
+    <a href="https://beamish-cendol-486ce6.netlify.app" class="link-btn" target="_blank">
+      <i data-lucide="globe"></i> Acessar Site Completo
+    </a>
+
+    <footer>
+      &copy; 2025 STUDIO ECOCRIATIVO · Todos os direitos reservados
+    </footer>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
